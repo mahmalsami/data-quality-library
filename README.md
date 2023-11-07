@@ -25,8 +25,7 @@ Replace `"/path/to/_dq-library"` with the actual path to the `_dq-library.ipynb`
 Here is a basic example of how to use a function from the library after loading it:
 
 ```python
-# Assuming the library has a function named 'validate_data'
-validation_results = validate_data(dataframe)
+df_processed, dq_summary = calculate_data_quality(dataframe, config_json)
 ```
 
 Substitute `validate_data` with the actual function you wish to use, and `dataframe` with your data frame object.
